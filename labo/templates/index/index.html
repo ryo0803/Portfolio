@@ -1,0 +1,156 @@
+<!doctype html>
+{% load static %}
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Nishizaki's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nishizaki。エンジニアのポートフォリオ。">
+<meta name="keywords" content="エンジニア,python,java,django,bottle">
+<link rel="stylesheet" href="static/labo/css/style.css">
+<script src="static/labo/js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+$('a[href^="#"]').click(function() {
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href=""><img src="static/labo/images/logo.png" alt="Nishizaki's Portfolio"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="#new">Profile</a></li>
+<li><a href="#skill">Skill</a></li>
+<li><a href="#works">Works</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="new">
+
+<h2>Profile</h2>
+<p>
+東京都出身29歳のエンジニア。<br>
+大学は情報系学部でC言語とJavaを学んでいた。<br>
+携帯販売会社、工作機械製造会社を経たのち、ソフトの開発や設計に携わりたいと考え
+27歳でIT業界へ転職。<br>
+現在は測位衛星のシステム開発にて業務系アプリケーションとWEBアプリケーションの開発に携わる。
+</p>
+
+</section>
+<!--/#new-->
+
+<section id="skill">
+
+<h2>Skill</h2>
+<p>※2021年6月現在まででの経験年数です</p>
+
+<table class="ta1">
+<tr>
+<th class="column1">カテゴリ</th>
+<th class="column2">種別</th>
+<th class="column3">経験年数</th>
+<th class="column4">備考</th>
+</tr>
+<tr>
+<td>OS</td>
+<td>・Windows<br>・Linux</td>
+<td class="column3">5年<br>2年</td>
+<td>業務で使用中。<br>通常使用であれば問題なし。</td>
+</tr>
+<tr>
+<td>言語</td>
+<td>・python<br>・java<br>・javascript<br>・C<br>・SQL
+    <br>・MATLAB</td>
+<td class="column3">2年<br>4年<br>2年<br>2年<br>1年<br>1年</td>
+<td>現在の業務で主に使用している言語はpythonであり、最も得意としている。
+    <br>javaとC言語は大学在学中にも経験あり。</td>
+</tr>
+<tr>
+<td>フレームワーク</td>
+<td>・Bottle<br>・Django</td>
+<td class="column3">1年<br>1年</td>
+<td>Bottleにおいては測位衛星システムのWEBアプリケーション作成にて使用。
+    <br>DjangoはこのWebページの作成に使用している。</td>
+</tr>
+<tr>
+<td>その他</td>
+<td>・VBA<br>・Git
+    <br>・Redmine<br>・SVN<br>・jenkins</td>
+<td class="column3">2年<br>2年<br>2年<br>2年<br>2年</td>
+<td>通常使用であれば問題なし。<br>VBAはExcelとPowerPointで経験あり。</td>
+</tr>
+
+</table>
+
+</section>
+<!--/#skill-->
+
+<section id="works">
+
+<h2>Works</h2>
+
+<div class="list">
+<img src="static/labo/images/sample1.jpg" alt="">
+<font size="7">Nishizaki's Portfolio</font>
+<p>このWebページです。Djangoを使用しています。<br>
+    <a href= "" >https://hogehoge.com</a></p>
+</div>
+
+<div class="list">
+<img src="static/labo/images/sample2.jpg" alt="">
+<font size="7">comming soon</font>
+<p>comming soon</p>
+</div>
+
+
+</section>
+<!--/#works-->
+
+<section id="contact">
+
+<h2>Contact</h2>
+<p class="c">お問い合わせは以下までお願い致します。</p>
+<p class="c"><span class="big1">nishizaki@hoge.com</span></p>
+<p class="c"><img src="static/labo/images/sample1.jpg" alt="" width="300"></p>
+
+</section>
+<!--/#contact-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="">Nishizaki's Portfolio</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+</body>
+</html>
