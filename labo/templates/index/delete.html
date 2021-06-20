@@ -7,9 +7,9 @@ delete
 {% block content %}
 <p>このコメントを削除します。よろしいですか？</p>
 <p>コメント: {{ item }}</p>
-<a href="{% url 'index'　%}">キャンセル</a>
 <form method="post" action="{% url 'delete' item.id %}">
     {% csrf_token %}
     <input type="submit" name="Delete Comment">
 </form>
+<a href="{% url 'index'　%}">キャンセル</a>
 {% endblock content %}

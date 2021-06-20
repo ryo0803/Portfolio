@@ -10,6 +10,8 @@ update
     {% csrf_token %}
     {{ form.comment }}
     <input type="submit" name="Update Comment">
+    <a href="{% url 'index'　%}">キャンセル</a>
 </form>
+
 {% endblock content %}
 
