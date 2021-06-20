@@ -1,10 +1,10 @@
-{% extends 'index/base.html' %}
-
-{% block title %}
-Nishizaki's Portfolio
-{% endblock title %}
-
-{% block content %}
+<!doctype html>
+{% load static %}
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Nishizaki's Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Nishizaki。エンジニアのポートフォリオ。">
 <meta name="keywords" content="エンジニア,python,java,django,bottle">
@@ -27,7 +27,9 @@ return false;
 });
 });
 </script>
+</head>
 
+<body>
 
 <header>
 <h1 id="logo"><a href=""><img src="static/labo/images/logo.png" alt="Nishizaki's Portfolio"></a></h1>
@@ -50,23 +52,21 @@ return false;
 
 <h2>Comment</h2>
 
-自由にコメントを追加してください。
+
 <form method="POST" action="">
     {% csrf_token %}
     {{ form.comment }}
     <input type="submit" name="Create Comment">
 </form>
-<br>
-
+<p>
+コメント
 {% for i in comments %}
     <div>
-        {{ i }}
-        <br>
-        <a href="{% url 'update'  i.id %}">更新</a>
-        <a href="{% url 'delete'  i.id %}">削除</a>
+        <p>{{ i }}</p>
     </div>
-    <br>
 {% endfor %}
+
+</p>
 
 </section>
 <!--/#comment-->
@@ -180,4 +180,6 @@ return false;
 
 <!--ページの上部に戻る「↑」ボタン-->
 <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
-{% endblock content %}
+
+</body>
+</html>
