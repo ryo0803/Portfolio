@@ -5,6 +5,7 @@ update
 {% endblock title %}
 
 {% block content %}
+コメントを編集できます。
 <form method="post" action="{% url 'update' comment.id %}">
     {% csrf_token %}
     {{ form.comment }}

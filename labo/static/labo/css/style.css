@@ -385,3 +385,9 @@ ol {
 .big1 {font-size: 22px;letter-spacing: normal;}
 
 }
+
+
+#id_model {
+    width: 1280px;
+    height: 32px;
+}
