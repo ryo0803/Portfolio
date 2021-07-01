@@ -385,7 +385,7 @@ ol {
 .big1 {font-size: 22px;letter-spacing: normal;}
 
 #id_comment {
-    width: 100%;	/*commentのフォーム幅*/
+    width: 95%;	/*commentのフォーム幅*/
 }
 
 }

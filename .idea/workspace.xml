@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1608f367-320f-4210-ad5d-b4e2bc3f6369" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labo/static/labo/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/labo/static/labo/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labo/templates/index/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/labo/templates/index/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labo/templates/index/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/labo/templates/index/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
