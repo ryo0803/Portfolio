@@ -388,5 +388,12 @@ ol {
     width: 90%;	/*commentのフォーム幅*/
 }
 
+th.column1 {
+    width: 20%;
+}
+th.column3 {
+    width: 20%;
+}
+
 }
 
