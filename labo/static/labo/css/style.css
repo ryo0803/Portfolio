@@ -384,10 +384,9 @@ ol {
 .ws {width: 96%;}
 .big1 {font-size: 22px;letter-spacing: normal;}
 
+#id_comment {
+    width: 100%;	/*commentのフォーム幅*/
 }
 
-
-#id_model {
-    width: 1280px;
-    height: 32px;
 }
+

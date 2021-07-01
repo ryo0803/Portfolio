@@ -9,7 +9,7 @@ delete
 <p>コメント: {{ item }}</p>
 <form method="post" action="{% url 'delete' item.id %}">
     {% csrf_token %}
-    <input type="submit" name="Delete Comment">
+    <input type="submit" value="削除" name="Delete Comment">
 </form>
 <a href="{% url 'index'　%}">キャンセル</a>
 {% endblock content %}

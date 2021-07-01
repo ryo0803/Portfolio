@@ -9,7 +9,7 @@ update
 <form method="post" action="{% url 'update' comment.id %}">
     {% csrf_token %}
     {{ form.comment }}
-    <input type="submit" name="Update Comment">
+    <input type="submit" value="更新" name="Update Comment">
     <a href="{% url 'index'　%}">キャンセル</a>
 </form>
 
